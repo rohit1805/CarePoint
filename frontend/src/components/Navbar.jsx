@@ -15,7 +15,15 @@ const Navbar = () => {
           <span className="text-rose-600">Point</span>
         </h3>
       </div> */}
-      <img src={assets.logo} alt="" className="w-44 cursor-pointer" />
+      <img
+        src={assets.logo}
+        alt=""
+        className="w-44 cursor-pointer"
+        onClick={() => {
+          navigate("/");
+          scrollTo(0, 0);
+        }}
+      />
       <ul className="hidden md:flex items-start gap-5 font-medium">
         <NavLink to={"/"}>
           <li className="py-1">HOME</li>
